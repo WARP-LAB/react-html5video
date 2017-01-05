@@ -371,7 +371,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            percentageBuffered: this.videoEl.buffered.length && this.videoEl.buffered.end(this.videoEl.buffered.length - 1) / this.videoEl.duration * 100,
 	            percentagePlayed: this.videoEl.currentTime / this.videoEl.duration * 100,
 	            error: this.videoEl.networkState === this.videoEl.NETWORK_NO_SOURCE,
-	            loading: this.videoEl.readyState < this.videoEl.HAVE_ENOUGH_DATA
+	            loading: this.videoEl.readyState < this.videoEl.HAVE_METADATA
 	        });
 	    },
 
